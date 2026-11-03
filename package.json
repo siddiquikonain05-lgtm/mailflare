@@ -3,6 +3,7 @@
   "version": "0.5.4",
   "private": true,
   "scripts": {
+    "postinstall": "npm run build",
     "dev": "npm run db:bundle && vp dev --port 3000",
     "build": "npm run db:bundle && vp build",
     "build:next": "npm run db:bundle && MAILFLARE_RUNTIME=node next build",
